@@ -1,10 +1,11 @@
-## BERT2OME: Prediction of 2′-O-Methylation Modifications From RNA Sequence by Transformer Architecture Based on BERT
+# BERT2OME: Prediction of 2′-O-Methylation Modifications From RNA Sequence by Transformer Architecture Based on BERT
 
 Prepared by Necla Nisa Soylu
 
+## Introduction
 Our proposed model BERT2OME was published in IEEE/ACM Transactions on Computational Biology and Bioinformatics, focuses on RNA 2’-O-methylation modification site prediction across multiple species by utilizing the Bidirectional Encoder Representations from Transformers (BERT) model. Our model converts RNA sequences into vector embeddings, capturing both syntactic and semantic information from massive language corpora. By considering a combination of BERT embeddings and a two-dimensional Convolutional Neural Network (CNN), BERT2OME outperforms traditional machine learning approaches and shallow neural networks in accurately predicting RNA modification sites. Through extensive experimentation and evaluation of datasets from various species including Homo sapiens, Saccharomyces cerevisiae, and Mus musculus, BERT2OME demonstrates robust performance and cross-species predictability. Furthermore, this study utilizes STREME to identify consensus sequence motifs associated with 2’-O-methylation modifications, on potential similarities between different types of RNA modifications. 
-If you want 
 
+## Datasets
 4 different datasets are used for detecting 2'-O-methylation sites in the given RNA sequences.
 
 - RMBase_800.xlsx (named as "Human 2 Dataset" in our paper) 
@@ -16,7 +17,9 @@ Last 3 datasets can be downloaded from the following website: http://lab.malab.c
 
 We used one of the well-known transformer base model BERT, for converting given RNA sequences into vector embeddings format.
 
-- **VectorEmbeddingCreation_BERT.ipynb** file is used for converting RMBase (named as Human 1 Dataset in the paper), H. sapiens (named as Human 2 dataset in the paper), M. musculus and S. cerevisiae datasets into vector embedding formats by using BERT.
+## Models
+
+**VectorEmbeddingCreation_BERT.ipynb** file is used for converting RMBase (named as Human 1 Dataset in the paper), H. sapiens (named as Human 2 dataset in the paper), M. musculus and S. cerevisiae datasets into vector embedding formats by using BERT.
 
 After the previous conversion, following files are generated:
 
@@ -36,15 +39,16 @@ Random Forest and XGBoost models are fed with these vector embeddings and compar
 
 - **BERT_Models.ipynb**
 
+## Model Architecture
 Whole representation for the base methods (left part of the diagram) and the novel part (right part of the diagram). The workflow of the proposed method BERT2OME. 4 different datasets with 3 different species were used.
 Vector embeddings were created using BERT model, then classification method 2D CNN was implemented to identify 2’-O-methylation sites in the given RNA sequences: 
 
 ![image](https://github.com/Nisasoylu/BERT2OME/assets/29046464/16d36a9b-c0f1-4dc9-8893-d626fa6bba2a)
 
-### Paper Link:
+## Paper Link:
 https://ieeexplore.ieee.org/document/10018863
 
-### Citation:
+## Citation:
 @ARTICLE{10018863,
   author={Soylu, Necla Nisa and Sefer, Emre},
   journal={IEEE/ACM Transactions on Computational Biology and Bioinformatics}, 
