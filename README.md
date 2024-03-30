@@ -4,6 +4,7 @@ Prepared by Necla Nisa Soylu
 BERT2OME: Prediction of 2′-O-Methylation Modifications From RNA Sequence by Transformer Architecture Based on BERT
 
 Our proposed model BERT2OME was published in IEEE/ACM Transactions on Computational Biology and Bioinformatics, focuses on RNA 2’-O-methylation modification site prediction across multiple species by utilizing the Bidirectional Encoder Representations from Transformers (BERT) model. Our model converts RNA sequences into vector embeddings, capturing both syntactic and semantic information from massive language corpora. By considering a combination of BERT embeddings and a two-dimensional Convolutional Neural Network (CNN), BERT2OME outperforms traditional machine learning approaches and shallow neural networks in accurately predicting RNA modification sites. Through extensive experimentation and evaluation of datasets from various species including Homo sapiens, Saccharomyces cerevisiae, and Mus musculus, BERT2OME demonstrates robust performance and cross-species predictability. Furthermore, this study utilizes STREME to identify consensus sequence motifs associated with 2’-O-methylation modifications, on potential similarities between different types of RNA modifications. 
+If you want 
 
 4 different datasets are used for detecting 2'-O-methylation sites in the given RNA sequences.
 
@@ -35,3 +36,6 @@ After the previous conversion, following files are generated:
 Random Forest and XGBoost models are fed with these vector embeddings and compared with baseline models (training models with one-hot formatted RNA sequences). Then we implemented BERT+1D CNN model for different species. The similarity of the most similar sequences were about 41%. In order to minimize the risk of model overfitting, we have removed the sequences with more than 30% similarity. Last version of the baseline models and the proposed deep learning method (BERT2OME) can be found in the following part:
 
 - **BERT_Models.ipynb**
+
+![image](https://github.com/Nisasoylu/BERT2OME/assets/29046464/16d36a9b-c0f1-4dc9-8893-d626fa6bba2a)
+
