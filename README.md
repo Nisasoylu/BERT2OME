@@ -1,7 +1,7 @@
 # BERT2OME
 Prepared by Necla Nisa Soylu
 
-BERT2OME: Prediction of 2′-O-Methylation Modifications From RNA Sequence by Transformer Architecture Based on BERT
+## BERT2OME: Prediction of 2′-O-Methylation Modifications From RNA Sequence by Transformer Architecture Based on BERT
 
 Our proposed model BERT2OME was published in IEEE/ACM Transactions on Computational Biology and Bioinformatics, focuses on RNA 2’-O-methylation modification site prediction across multiple species by utilizing the Bidirectional Encoder Representations from Transformers (BERT) model. Our model converts RNA sequences into vector embeddings, capturing both syntactic and semantic information from massive language corpora. By considering a combination of BERT embeddings and a two-dimensional Convolutional Neural Network (CNN), BERT2OME outperforms traditional machine learning approaches and shallow neural networks in accurately predicting RNA modification sites. Through extensive experimentation and evaluation of datasets from various species including Homo sapiens, Saccharomyces cerevisiae, and Mus musculus, BERT2OME demonstrates robust performance and cross-species predictability. Furthermore, this study utilizes STREME to identify consensus sequence motifs associated with 2’-O-methylation modifications, on potential similarities between different types of RNA modifications. 
 If you want 
@@ -37,5 +37,21 @@ Random Forest and XGBoost models are fed with these vector embeddings and compar
 
 - **BERT_Models.ipynb**
 
+Whole representation for the base methods (left part of the diagram) and the novel part (right part of the diagram). The workflow of the proposed method BERT2OME. 4 different datasets with 3 different species were used.
+Vector embeddings were created using BERT model, then classification method 2D CNN was implemented to identify 2’-O-methylation sites in the given RNA sequences: 
+
 ![image](https://github.com/Nisasoylu/BERT2OME/assets/29046464/16d36a9b-c0f1-4dc9-8893-d626fa6bba2a)
+
+
+For citation:
+@ARTICLE{10018863,
+  author={Soylu, Necla Nisa and Sefer, Emre},
+  journal={IEEE/ACM Transactions on Computational Biology and Bioinformatics}, 
+  title={BERT2OME: Prediction of 2′-O-Methylation Modifications From RNA Sequence by Transformer Architecture Based on BERT}, 
+  year={2023},
+  volume={20},
+  number={3},
+  pages={2177-2189},
+  keywords={RNA;Bit error rate;Task analysis;Predictive models;Biological system modeling;Convolutional neural networks;Transformers;2′-O-methylation;RNA;BERT;convolutional neural network;transformers},
+  doi={10.1109/TCBB.2023.3237769}}
 
