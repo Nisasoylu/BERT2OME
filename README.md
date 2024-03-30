@@ -41,8 +41,10 @@ Vector embeddings were created using BERT model, then classification method 2D C
 
 ![image](https://github.com/Nisasoylu/BERT2OME/assets/29046464/16d36a9b-c0f1-4dc9-8893-d626fa6bba2a)
 
+### Paper Link:
+https://ieeexplore.ieee.org/document/10018863
 
-For citation:
+### Citation:
 @ARTICLE{10018863,
   author={Soylu, Necla Nisa and Sefer, Emre},
   journal={IEEE/ACM Transactions on Computational Biology and Bioinformatics}, 
@@ -53,4 +55,3 @@ For citation:
   pages={2177-2189},
   keywords={RNA;Bit error rate;Task analysis;Predictive models;Biological system modeling;Convolutional neural networks;Transformers;2′-O-methylation;RNA;BERT;convolutional neural network;transformers},
   doi={10.1109/TCBB.2023.3237769}}
-
