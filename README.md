@@ -13,7 +13,7 @@ Our proposed model BERT2OME was published in IEEE/ACM Transactions on Computatio
 - S. cerevisiae Dataset
 - M. musculus Dataset
 
-Last 3 datasets can be downloaded from the following website: http://lab.malab.cn/~acy/PTM_data/RNADataset.html
+Last 3 datasets can be also downloaded from the following website: http://lab.malab.cn/~acy/PTM_data/RNADataset.html
 
 We used one of the well-known transformer base model BERT, for converting given RNA sequences into vector embeddings format.
 
@@ -38,12 +38,6 @@ After the previous conversion, following files are generated:
 Random Forest and XGBoost models are fed with these vector embeddings and compared with baseline models (training models with one-hot formatted RNA sequences). Then we implemented BERT+1D CNN model for different species. The similarity of the most similar sequences were about 41%. In order to minimize the risk of model overfitting, we have removed the sequences with more than 30% similarity. Last version of the baseline models and the proposed deep learning method (BERT2OME) can be found in the following part:
 
 - **BERT_Models.ipynb**
-
-## Model Architecture
-Whole representation for the base methods (left part of the diagram) and the novel part (right part of the diagram). The workflow of the proposed method BERT2OME. 4 different datasets with 3 different species were used.
-Vector embeddings were created using BERT model, then classification method 2D CNN was implemented to identify 2’-O-methylation sites in the given RNA sequences: 
-
-![image](https://github.com/Nisasoylu/BERT2OME/assets/29046464/16d36a9b-c0f1-4dc9-8893-d626fa6bba2a)
 
 ## Paper Link:
 https://ieeexplore.ieee.org/document/10018863
