@@ -1,7 +1,5 @@
 # BERT2OME: Prediction of 2′-O-Methylation Modifications From RNA Sequence by Transformer Architecture Based on BERT
 
-Prepared by Necla Nisa Soylu
-
 ## Introduction
 Our proposed model BERT2OME was published in IEEE/ACM Transactions on Computational Biology and Bioinformatics, focuses on RNA 2’-O-methylation modification site prediction across multiple species by utilizing the Bidirectional Encoder Representations from Transformers (BERT) model. Our model converts RNA sequences into vector embeddings, capturing both syntactic and semantic information from massive language corpora. By considering a combination of BERT embeddings and a two-dimensional Convolutional Neural Network (CNN), BERT2OME outperforms traditional machine learning approaches and shallow neural networks in accurately predicting RNA modification sites. Through extensive experimentation and evaluation of datasets from various species including Homo sapiens, Saccharomyces cerevisiae, and Mus musculus, BERT2OME demonstrates robust performance and cross-species predictability. Furthermore, this study utilizes STREME to identify consensus sequence motifs associated with 2’-O-methylation modifications, on potential similarities between different types of RNA modifications. 
 
@@ -35,9 +33,7 @@ After the previous conversion, following files are generated:
 - BERTYEASTEMBEDDINGSX.npy
 - BERTYEASTEMBEDDINGSY.npy
 
-Random Forest and XGBoost models are fed with these vector embeddings and compared with baseline models (training models with one-hot formatted RNA sequences). Then we implemented BERT+1D CNN model for different species. The similarity of the most similar sequences were about 41%. In order to minimize the risk of model overfitting, we have removed the sequences with more than 30% similarity. Last version of the baseline models and the proposed deep learning method (BERT2OME) can be found in the following part:
-
-- **BERT_Models.ipynb**
+Random Forest and XGBoost models are fed with these vector embeddings and compared with baseline models (training models with one-hot formatted RNA sequences). Then we implemented BERT+1D CNN model for different species. The similarity of the most similar sequences were about 41%. In order to minimize the risk of model overfitting, we have removed the sequences with more than 30% similarity. Last version of the baseline models and the proposed deep learning method (BERT2OME) can be found in **BERT_Models.ipynb** file.
 
 ## Paper Link:
 https://ieeexplore.ieee.org/document/10018863
